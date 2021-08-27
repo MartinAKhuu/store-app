@@ -1,0 +1,9 @@
+#header-region {
+    border-bottom: 1px solid #ccc;
+}
+
+.product-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
