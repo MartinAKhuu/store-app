@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useSelector, useDispatch } from "react-redux";
-import { add_to_cart, remove_from_cart } from "../redux/reducers";
+import { add_to_cart, remove_from_cart } from "../redux/reducers/cart";
 
 const CartItem = () => {
 
@@ -23,9 +23,13 @@ const CartItem = () => {
                             </div>
                             <div className="d-flex flex-column align-self-center">
                                 <div className="d-flex flex-nowrap">
-                                    <button className="btn btn-primary" onClick={() => dispatch(remove_from_cart(product.product.id))}>-</button>
+                                    <button className="btn btn-primary" onClick={() => dispatch(remove_from_cart(product.product.id))}>
+                                        <i className="fas fa-minus fa-xs"></i>
+                                    </button>
                                     <span className="align-self-center p-2">${(product.product.price * product.quantity).toFixed(2)}</span>
-                                    <button className="btn btn-primary" onClick={() => dispatch(add_to_cart({ product: product.product, quantity: 1 }))}>+</button>
+                                    <button className="btn btn-primary" onClick={() => dispatch(add_to_cart({ product: product.product, quantity: 1 }))}>
+                                        <i className="fas fa-plus fa-xs"></i>
+                                    </button>
                                 </div>
                                 <span className="p-2 align-self-center">Quantity: {product.quantity}</span>
                             </div>
