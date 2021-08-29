@@ -5,7 +5,7 @@ import { add_to_cart } from '../redux/reducers/cart';
 
 const Product = ({ products }) => {
 
-    const filter = useSelector(state => state.filter);
+    const filter = useSelector((state) => state.filter);
     const dispatch = useDispatch();
 
     return (

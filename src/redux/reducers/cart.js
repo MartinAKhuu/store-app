@@ -8,7 +8,7 @@ export const cartSlice = createSlice({
     reducers: {
         // Check if product is in cart, if in cart, add 1 to quantity, else, push object to cart
         add_to_cart: (state, action) => {
-            let indexOfProduct = state.findIndex(product => product.product.id === action.payload.product.id);
+            let indexOfProduct = state.findIndex((product) => product.product.id === action.payload.product.id);
             if (indexOfProduct !== -1)
                 state[indexOfProduct].quantity += 1;
             else
@@ -17,7 +17,7 @@ export const cartSlice = createSlice({
         // Product is ALWAYS in cart since if not in cart, we are not even rendering the item in the cart
         // If product quantity > 1, decrement by 1, if product quantity is 1, remove item from cart array
         remove_from_cart: (state, action) => {
-            let indexOfProduct = state.findIndex(product => product.product.id === action.payload);
+            let indexOfProduct = state.findIndex((product) => product.product.id === action.payload);
             let quantity = state[indexOfProduct].quantity;
 
             quantity > 1

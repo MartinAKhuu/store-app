@@ -5,7 +5,7 @@ import { add_to_cart, remove_from_cart } from "../redux/reducers/cart";
 
 const CartItem = () => {
 
-    const cart = useSelector(state => state.cart);
+    const cart = useSelector((state) => state.cart);
     const dispatch = useDispatch();
 
     return (
@@ -15,7 +15,7 @@ const CartItem = () => {
                 <p>Your cart is empty! Add some to see what happens!</p>
                 :
                 <>
-                    {cart.map(product => (
+                    {cart.map((product) => (
                         <div className="d-flex flex-md-row flex-column" key={product.product.id}>
                             <div className="d-flex flex-column align-items-center flex-grow-1">
                                 <img src={product.product.image} alt={product.product.title} className="img-fluid" style={{ height: "200px", maxWidth: "200px" }} />

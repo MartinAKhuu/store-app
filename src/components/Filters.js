@@ -6,11 +6,11 @@ import { set_filter, clear_filter } from '../redux/reducers/filter';
 const Filters = ({ products }) => {
 
     const [filters, setFilters] = useState([]);
-    const filter = useSelector(state => state.filter);
+    const filter = useSelector((state) => state.filter);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        const getFilters = products => {
+        const getFilters = (products) => {
             if (products) {
                 for (let product of products) {
                     if (!filters.includes(product.category))

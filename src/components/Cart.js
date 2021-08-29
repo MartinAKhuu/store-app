@@ -5,10 +5,10 @@ import { useSelector } from "react-redux";
 
 const Cart = () => {
 
-    const cart = useSelector(state => state.cart);
+    const cart = useSelector((state) => state.cart);
     const [totalPrice, setTotalPrice] = useState(0);
 
-    const getTotalCart = cart => {
+    const getTotalCart = (cart) => {
         let totalCart = 0;
 
         for (let i = 0; i < cart.length; i++) {

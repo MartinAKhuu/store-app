@@ -13,9 +13,9 @@ const App = () => {
 
   const fetchData = async () => {
     await fetch("https://fakestoreapi.com/products")
-      .then(response => response.json())
-      .then(json => setProducts(json))
-      .catch(error => console.log(error))
+      .then((response) => response.json())
+      .then((json) => setProducts(json))
+      .catch((error) => console.log(error))
   }
 
   useEffect(() => {

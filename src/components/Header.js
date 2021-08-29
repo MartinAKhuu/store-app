@@ -8,7 +8,7 @@ const Header = () => {
     const cart = useSelector((state) => state.cart);
     const [totalCartItems, setTotalCartItems] = useState(cart.length);
 
-    const getTotalCartItems = cart => {
+    const getTotalCartItems = (cart) => {
         let totalItems = 0;
 
         for (let i = 0; i < cart.length; i++) {
