@@ -2,11 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Products from './components/Products';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import './css/styles.css';
-
 const App = () => {
 
   const [products, setProducts] = useState([]);
