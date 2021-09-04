@@ -25,12 +25,12 @@ const Filters = ({ products }) => {
     return (
         <>
             <h2 className="h3 mt-3 mb-3">Categories</h2>
-            <div >
+            <div className="filters">
                 <input type="radio" id={"#filter-0"} name="filter" value="" checked={filter === ""} onChange={() => dispatch(clear_filter())} />
                 <label htmlFor="html" className="p-1">Clear filter</label>
             </div>
             {filters.map((filter, index) => (
-                <div key={"filter" + index}>
+                <div className="filters" key={"filter" + index}>
                     <input type="radio" id={"#filter-" + index + 1} name="filter" value={filter} onChange={(e) => dispatch(set_filter(e.target.value))} />
                     <label htmlFor="html" className="p-1">{filter[0].toUpperCase() + filter.substring(1)}</label>
                 </div>
