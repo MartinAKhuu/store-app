@@ -14,7 +14,7 @@ const Product = ({ products }) => {
                 // Render product if the product's category is equal to the filter, or render everything if filter is set to empty
                 return (product.category === filter || filter === "")
                     ?
-                    <div className="col-lg-3 col-md-6 col-xs-12 mb-3 mt-3" key={product.id}>
+                    <div className="col-xl-3 col-lg-4 col-md-6 col-xs-12 mb-3 mt-3" key={product.id}>
                         <div className="card">
                             <img src={product.image} className="card-img-top img-fluid" alt={product.title} style={{ height: "300px" }} />
                             <div className="card-body">

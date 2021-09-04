@@ -24,7 +24,7 @@ const Filters = ({ products }) => {
 
     return (
         <>
-            <h2 className="h3 m-3">Categories</h2>
+            <h2 className="h3 mt-3 mb-3">Categories</h2>
             <div >
                 <input type="radio" id={"#filter-0"} name="filter" value="" checked={filter === ""} onChange={() => dispatch(clear_filter())} />
                 <label htmlFor="html" className="p-1">Clear filter</label>
