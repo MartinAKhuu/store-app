@@ -25,9 +25,9 @@ const Header = () => {
     return (
         <div id="header-region" className="container-fluid d-flex justify-content-between">
             <h1 className="display-5 p-3">Khuu Commerce</h1>
-            <button type="button" className="btn position-relative" data-bs-toggle="modal" data-bs-target="#cart-modal">
+            <button type="button" className="btn cart-icon position-relative" data-bs-toggle="modal" data-bs-target="#cart-modal">
                 <span><i className="fas fa-shopping-cart fa-2x"></i></span>
-                <span className="position-absolute start-70 translate-middle badge rounded-pill bg-danger" style={{ top: "30px" }}>{totalCartItems}</span>
+                <span className="position-absolute translate-middle badge rounded-pill bg-danger" style={{ top: "30px" }}>{totalCartItems}</span>
             </button>
             <Cart />
         </div>

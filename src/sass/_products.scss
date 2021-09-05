@@ -1,3 +1,9 @@
 .filters {
     white-space: nowrap
 }
+
+.product-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

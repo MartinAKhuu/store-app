@@ -2,12 +2,16 @@
   border-bottom: 1px solid #ccc;
 }
 
-.product-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.cart-icon:hover {
+  color: #767676;
 }
 
 .filters {
+  white-space: nowrap;
+}
+
+.product-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
