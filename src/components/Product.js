@@ -18,7 +18,7 @@ const Product = ({ products }) => {
                         <div className="card">
                             <img src={product.image} className="card-img-top img-fluid" alt={product.title} style={{ height: "300px" }} />
                             <div className="card-body">
-                                <h5 className="card-title product-title">{product.title}</h5>
+                                <h3 className="card-title product-title">{product.title}</h3>
                                 <p className="card-text">${product.price.toFixed(2)}</p>
                             </div>
                             <button className="btn btn-primary" onClick={() => dispatch(add_to_cart({ product: product, quantity: 1 }))}>Add to cart</button>
